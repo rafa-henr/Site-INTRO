@@ -8,6 +8,6 @@ Resultado:
 ![Site com elemento QR](imagens/Resolução-front.png)
 
 Link para solução na web:
-(http://rafa-henr.github.io)
+(https://rafa-henr.github.io/Site-INTRO/)
 
 Documentação:
