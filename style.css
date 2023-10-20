@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --preto : #030303;
+}
+
+body{
+    background-color: #fffbfb;
+    font-family: Epilogue, sans-serif;
+    overflow: hidden;
+}
+
+/* Nav */
+.titulo{
+    font-family: sans-serif;
+    padding-left: 1.2vw;
+    padding-top: 1.2vw;
+    font-size: 5vh;
+    font-weight: 750;
+    color: var(--preto);
+    display: inline-block;
+}
+
+.sobre{
+    margin-right: 55vw;
+}
+
+.item {
+    transition: 0.4s;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 2.1vh;
+    color: var(--preto);
+    padding: 0.2vw;
+    transition: 0.4s;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.item:hover{
+    opacity: 1;
+}
+
+/* dropdown */
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    position: relative;
+    display: inline-block;
+}
+
+ul li a{
+    display: block;
+    padding: 1vw 1vw 0.3vw;
+    text-align: center;
+    color: var(--preto);
+    opacity: 0.8;
+    transition: 0.2;
+    text-decoration: none;
+    font-size: 2.1vh;
+    left: 0;
+}
+
+ul li a:hover{
+    opacity: 1;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background-color: #f5f0f0;
+    border-radius: 10%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+/* Pagina */
+h1{
+    position: relative;
+    padding-left: 20vh;
+    padding-top: 18vh;
+
+    font-family: sans-serif;
+    color: var(--preto);
+    font-size: 10vh;
+    font-weight: 750;
+}
+
+.text{
+    position: relative;
+    padding-top: 4vh;
+    padding-left: 20vh;
+    width: 70vh;
+
+    text-justify: distribute;
+    color: var(--preto);
+    opacity: 0.9;
+}
+
+.more{
+    position: relative;
+    width: 20vh;
+    height: 6vh;
+    margin-top: 5vh;
+    margin-left: 20vh;
+
+    font-size: 2.3vh;
+    font-family: Epilogue;
+    font-weight: 800;
+
+    border-width: 2px;
+    border-radius: 3vh;
+
+    opacity: 0.9;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.more:hover{
+    opacity: 1;
+}
+
+.imagem{
+    position: fixed;
+    object-fit: cover;
+    width: 60vh;
+    height: 80vh;
+    left: 110vh;
+    top: 50%;
+    transform: translateY(-50%);
+} 
